@@ -84,12 +84,27 @@ function loadScenery(index) {
     loadingIndicator.style.display = 'none';
   };
   
-  img.onerror = function() {
-    // 画像読み込みエラーの場合
-    sceneryImage.src = 'images/placeholder.jpg';
-    loadingIndicator.style.display = 'none';
-    console.error('画像の読み込みに失敗しました');
-  };
+img.onerror = function() {
+  // 画像読み込みエラーの場合
+  // プレースホルダー画像を表示しない
+  sceneryImage.style.display = 'none';
+  
+  // ローディング表示を残す（テキストのみ）
+  loadingIndicator.style.display = 'flex';
+  loadingIndicator.innerHTML = '<p>美しい絶景をお楽しみください</p>';
+  
+  console.error('画像の読み込みに失敗しました');
+};
+
+// 成功時の処理
+img.onload = function() {
+  // 正常に読み込めた場合は画像を表示
+  sceneryImage.style.display = 'block';
+  sceneryImage.src = scenery.imageUrl;
+  
+  // ローディング表示を非表示
+  loadingIndicator.style.display = 'none';
+};
   
   img.src = scenery.imageUrl;
   currentIndex = index;
