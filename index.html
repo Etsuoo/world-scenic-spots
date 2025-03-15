@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界の絶景</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <div class="app-container" id="app">
+    <div class="scenery-container" id="sceneryContainer">
+      <img id="sceneryImage" class="scenery-image" src="" alt="世界の絶景">
+      <div class="date-display" id="dateDisplay"></div>
+      
+      <div class="info-panel" id="infoPanel">
+        <div class="pull-indicator" id="pullIndicator"></div>
+        <h1 class="title" id="sceneTitle"></h1>
+        <h2 class="location" id="sceneLocation"></h2>
+        <p class="description" id="sceneDescription"></p>
+      </div>
+    </div>
+    
+    <div class="nav-arrows">
+      <div class="nav-arrow" id="prevButton">←</div>
+      <div class="nav-arrow" id="nextButton">→</div>
+    </div>
+    
+    <div class="loading" id="loadingIndicator">
+      <p>絶景をロード中...</p>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
