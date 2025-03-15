@@ -124,6 +124,17 @@ body {
   z-index: 5;
 }
 
+.placeholder-image {
+  width: 400px;        /* 幅を固定 */
+  height: 300px;       /* 高さを固定 */
+  object-fit: contain; /* アスペクト比を保持 */
+  position: absolute;
+  top: 50%;            /* 中央寄せのために */
+  left: 50%;
+  transform: translate(-50%, -50%); /* 中央に配置 */
+  background-color: #f5f5f5;
+}
+
 /* スワイプ対応用のスタイル */
 @media (max-width: 768px) {
   .nav-arrows {
@@ -142,4 +153,5 @@ body {
     z-index: 15;
     pointer-events: none;
   }
+
 }
