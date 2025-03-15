@@ -5,7 +5,7 @@ const sceneryData = [
     title: 'マチュピチュ',
     location: 'ペルー',
     description: '標高約2,450mのアンデス山脈に位置する古代インカ帝国の遺跡。1983年にユネスコ世界遺産に登録されました。周囲の山々と雲海が織りなす神秘的な景観が人気です。',
-    imageUrl: 'https://source.unsplash.com/random/1600x900/?machu-picchu',
+    imageUrl: 'https://ik.imagekit.io/demo/img/image1.jpg',
     date: '2025-03-16',
   },
   {
