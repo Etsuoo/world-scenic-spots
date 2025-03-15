@@ -99,6 +99,7 @@ body {
   user-select: none;
 }
 
+/* loading表示のスタイルを改善 */
 .loading {
   position: absolute;
   top: 0;
@@ -108,8 +109,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.7); /* 暗めの背景 */
   z-index: 20;
+}
+
+.loading p {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .date-display {
